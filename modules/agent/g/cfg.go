@@ -20,6 +20,7 @@ import (
 	"os"
 	"sync"
 	"os/exec"
+	"bytes"
 	"github.com/toolkits/file"
 	"github.com/garyburd/redigo/redis"
 )
@@ -107,7 +108,7 @@ func Sn() (string, error) {
 	cmd.Stdout = &out
 	err := cmd.Run()
 	if err != nil {
-		log.fataln("ERROR")
+		log.Println("ERROR: execute dmidecode to get sn failed")
 	}
 	sn := out.String()
 	return sn, nil
@@ -124,13 +125,11 @@ func RedisHostName(sn string) (string, error) {
 	c, err := redis.Dial("tcp", redis_addr)
 	if err != nil {
 		log.Println("ERROR: can't connect redis, redis_addr: ", redis_addr)
-		return _, err
 	}
 	c.Do("AUTH", redis_pass)
 	value, err := redis.String(c.Do("GET", sn))
-	if err != "" {
+	if err != nil {
 		log.Println("ERROR: can't get hostinfo from redis which the machine'sn is ",sn)
-		return _, err
 	}
 	var host_info HostInfo
 	json.Unmarshal([]byte(value), &host_info)
