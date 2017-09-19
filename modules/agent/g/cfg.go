@@ -211,4 +211,5 @@ func ParseConfig(cfg string) {
 	config = &c
 
 	log.Println("read config file:", cfg, "successfully")
+	log.Println("New log record:", cfg, "successfully")
 }
