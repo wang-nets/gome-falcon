@@ -141,8 +141,9 @@ func RedisHostName(sn string) (string, error) {
 }
 
 func Hostname() (string, error) {
-	RedisEnabled := Config().CmdbRedis.Enabled
-	if RedisEnabled == true {
+	redisenabled := Config().CmdbRedis.Enabled
+	log.Println("INFO: redis enabled is ", redisenabled)
+	if redisenabled == true {
 		var sn string
 		var hostname string
 		sn, _ = Sn()
