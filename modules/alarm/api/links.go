@@ -16,7 +16,7 @@ package api
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
+	"github.com/open-falcon/gome-plus/modules/alarm/g"
 	"github.com/toolkits/net/httplib"
 	"time"
 )

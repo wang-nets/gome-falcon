@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	log "github.com/Sirupsen/logrus"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
+	"github.com/open-falcon/gome-plus/modules/alarm/g"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

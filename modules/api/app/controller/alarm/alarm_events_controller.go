@@ -18,8 +18,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	alm "github.com/open-falcon/falcon-plus/modules/api/app/model/alarm"
+	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
+	alm "github.com/open-falcon/gome-plus/modules/api/app/model/alarm"
 	"strings"
 )
 

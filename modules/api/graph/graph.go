@@ -24,9 +24,9 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 
-	backend "github.com/open-falcon/falcon-plus/common/backend_pool"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	cutils "github.com/open-falcon/falcon-plus/common/utils"
+	backend "github.com/open-falcon/gome-plus/common/backend_pool"
+	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cutils "github.com/open-falcon/gome-plus/common/utils"
 	"github.com/spf13/viper"
 	connp "github.com/toolkits/conn_pool"
 	rpcpool "github.com/toolkits/conn_pool/rpc_conn_pool"

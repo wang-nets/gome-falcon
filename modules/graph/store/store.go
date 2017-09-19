@@ -21,9 +21,9 @@ import (
 	"log"
 	"sync"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
+	cmodel "github.com/open-falcon/gome-plus/common/model"
 
-	"github.com/open-falcon/falcon-plus/modules/graph/g"
+	"github.com/open-falcon/gome-plus/modules/graph/g"
 )
 
 var GraphItems *GraphItemMap

@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
+	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
 )
 
 type APISetMaintainInput struct {

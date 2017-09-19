@@ -15,7 +15,7 @@
 package http
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/judge/g"
+	"github.com/open-falcon/gome-plus/modules/judge/g"
 	"github.com/toolkits/file"
 	"net/http"
 	"strings"

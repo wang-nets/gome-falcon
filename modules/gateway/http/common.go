@@ -21,7 +21,7 @@ import (
 
 	"github.com/toolkits/file"
 
-	"github.com/open-falcon/falcon-plus/modules/gateway/g"
+	"github.com/open-falcon/gome-plus/modules/gateway/g"
 )
 
 func configCommonRoutes() {

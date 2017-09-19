@@ -1,11 +1,11 @@
-## Running falcon-plus container
+## Running gome-plus container
 
-    docker pull openfalcon/falcon-plus:0.2.0
-    docker run -itd -p 8081:8081 openfalcon/falcon-plus:0.2.0 bash /run.sh hbs
+    docker pull openfalcon/gome-plus:0.2.0
+    docker run -itd -p 8081:8081 openfalcon/gome-plus:0.2.0 bash /run.sh hbs
 
-## Running falcon-plus container with docker-compose
+## Running gome-plus container with docker-compose
 
-    docker-compose -f init.yml up -d falcon-plus
+    docker-compose -f init.yml up -d gome-plus
 
 ## Running mysql and redis container
 

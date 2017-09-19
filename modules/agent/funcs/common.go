@@ -15,7 +15,7 @@
 package funcs
 
 import (
-	"github.com/open-falcon/falcon-plus/common/model"
+	"github.com/open-falcon/gome-plus/common/model"
 	"strings"
 )
 

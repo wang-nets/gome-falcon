@@ -20,7 +20,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/open-falcon/falcon-plus/modules/nodata/g"
+	"github.com/open-falcon/gome-plus/modules/nodata/g"
 )
 
 const (

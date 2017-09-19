@@ -15,7 +15,7 @@
 package sender
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/transfer/proc"
+	"github.com/open-falcon/gome-plus/modules/transfer/proc"
 	"github.com/toolkits/container/list"
 	"log"
 	"strings"

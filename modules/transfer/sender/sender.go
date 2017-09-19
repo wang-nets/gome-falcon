@@ -16,10 +16,10 @@ package sender
 
 import (
 	"fmt"
-	backend "github.com/open-falcon/falcon-plus/common/backend_pool"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
-	"github.com/open-falcon/falcon-plus/modules/transfer/proc"
+	backend "github.com/open-falcon/gome-plus/common/backend_pool"
+	cmodel "github.com/open-falcon/gome-plus/common/model"
+	"github.com/open-falcon/gome-plus/modules/transfer/g"
+	"github.com/open-falcon/gome-plus/modules/transfer/proc"
 	rings "github.com/toolkits/consistent/rings"
 	nlist "github.com/toolkits/container/list"
 	"log"

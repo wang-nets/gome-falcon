@@ -16,7 +16,7 @@ package g
 
 import (
 	"bytes"
-	"github.com/open-falcon/falcon-plus/common/model"
+	"github.com/open-falcon/gome-plus/common/model"
 	"github.com/toolkits/slice"
 	"log"
 	"net"
