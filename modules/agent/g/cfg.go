@@ -19,8 +19,9 @@ import (
 	"log"
 	"os"
 	"sync"
-
+	"os/exec"
 	"github.com/toolkits/file"
+	"github.com/garyburd/redigo/redis"
 )
 
 type PluginConfig struct {
@@ -55,6 +56,12 @@ type CollectorConfig struct {
 	MountPoint  []string `json:"mountPoint"`
 }
 
+type CmdbRedisConfig struct {
+	Enabled  bool `json:"enabled"`
+	Addr     string `json:"addr"`
+	Password string `json:"password"`
+}
+
 type GlobalConfig struct {
 	Debug         bool              `json:"debug"`
 	Hostname      string            `json:"hostname"`
@@ -63,6 +70,7 @@ type GlobalConfig struct {
 	Heartbeat     *HeartbeatConfig  `json:"heartbeat"`
 	Transfer      *TransferConfig   `json:"transfer"`
 	Http          *HttpConfig       `json:"http"`
+	CmdbRedis     *CmdbRedisConfig  `json:"redis"`
 	Collector     *CollectorConfig  `json:"collector"`
 	DefaultTags   map[string]string `json:"default_tags"`
 	IgnoreMetrics map[string]bool   `json:"ignore"`
@@ -74,13 +82,75 @@ var (
 	lock       = new(sync.RWMutex)
 )
 
+type HostInfo struct {
+	CoName      string
+	IP          string
+	HostName    string
+	NetworkType string
+	VpcId       int
+	DiskType    string
+	ID          int
+}
+
 func Config() *GlobalConfig {
 	lock.RLock()
 	defer lock.RUnlock()
 	return config
 }
 
+
+
+func Sn() (string, error) {
+	cmd := exec.Command("/bin/bash", "-c", "dmidecode -s system-serial-number|sed 's/ //g'")
+	var out bytes.Buffer
+
+	cmd.Stdout = &out
+	err := cmd.Run()
+	if err != nil {
+		log.fataln("ERROR")
+	}
+	sn := out.String()
+	return sn, nil
+}
+
+func RedisHostName(sn string) (string, error) {
+	redis_addr := Config().CmdbRedis.Addr
+	redis_pass := Config().CmdbRedis.Password
+	log.Println("INFO: redis_addr:", redis_addr, ",redis_pass:", redis_pass)
+	if redis_addr == "" {
+		log.Println("ERROR: read redis_addr failed")
+	}
+
+	c, err := redis.Dial("tcp", redis_addr)
+	if err != nil {
+		log.Println("ERROR: can't connect redis, redis_addr: ", redis_addr)
+		return _, err
+	}
+	c.Do("AUTH", redis_pass)
+	value, err := redis.String(c.Do("GET", sn))
+	if err != "" {
+		log.Println("ERROR: can't get hostinfo from redis which the machine'sn is ",sn)
+		return _, err
+	}
+	var host_info HostInfo
+	json.Unmarshal([]byte(value), &host_info)
+	hostname := host_info.HostName
+	log.Println("INFO: host name from redis is ", hostname)
+	defer c.Close()
+	return hostname, nil
+}
+
 func Hostname() (string, error) {
+	RedisEnabled := Config().CmdbRedis.Enabled
+	if RedisEnabled == true {
+		var sn string
+		var hostname string
+		sn, _ = Sn()
+		hostname, _ = RedisHostName(sn)
+		if hostname != "" {
+			return hostname, nil
+		}
+	}
 	hostname := Config().Hostname
 	if hostname != "" {
 		return hostname, nil
