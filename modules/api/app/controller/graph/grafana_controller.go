@@ -22,10 +22,10 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/emirpasic/gods/maps/hashmap"
 	"github.com/gin-gonic/gin"
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
-	m "github.com/open-falcon/gome-plus/modules/api/app/model/graph"
-	u "github.com/open-falcon/gome-plus/modules/api/app/utils"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
+	m "github.com/open-falcon/gome-falcon/modules/api/app/model/graph"
+	u "github.com/open-falcon/gome-falcon/modules/api/app/utils"
 )
 
 type APIGrafanaMainQueryInputs struct {

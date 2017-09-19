@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/open-falcon/gome-plus/cmd"
+	"github.com/open-falcon/gome-falcon/cmd"
 	"github.com/spf13/cobra"
 )
 

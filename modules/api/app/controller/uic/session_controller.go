@@ -20,9 +20,9 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
-	"github.com/open-falcon/gome-plus/modules/api/app/model/uic"
-	"github.com/open-falcon/gome-plus/modules/api/app/utils"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
+	"github.com/open-falcon/gome-falcon/modules/api/app/model/uic"
+	"github.com/open-falcon/gome-falcon/modules/api/app/utils"
 )
 
 type APILoginInput struct {

@@ -18,11 +18,11 @@ import (
 	"log"
 	"sync"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 	"github.com/toolkits/container/nmap"
 
-	"github.com/open-falcon/gome-plus/modules/nodata/config/service"
-	"github.com/open-falcon/gome-plus/modules/nodata/g"
+	"github.com/open-falcon/gome-falcon/modules/nodata/config/service"
+	"github.com/open-falcon/gome-falcon/modules/nodata/g"
 )
 
 // nodata配置(mockcfg)的缓存, 这些数据来自配置中心

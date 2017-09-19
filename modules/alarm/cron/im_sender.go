@@ -16,9 +16,9 @@ package cron
 
 import (
 	log "github.com/Sirupsen/logrus"
-	"github.com/open-falcon/gome-plus/modules/alarm/g"
-	"github.com/open-falcon/gome-plus/modules/alarm/model"
-	"github.com/open-falcon/gome-plus/modules/alarm/redi"
+	"github.com/open-falcon/gome-falcon/modules/alarm/g"
+	"github.com/open-falcon/gome-falcon/modules/alarm/model"
+	"github.com/open-falcon/gome-falcon/modules/alarm/redi"
 	"github.com/toolkits/net/httplib"
 	"time"
 )

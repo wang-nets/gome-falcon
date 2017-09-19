@@ -16,7 +16,7 @@ package g
 
 import (
 	"fmt"
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 )
 
 func Link(event *cmodel.Event) string {

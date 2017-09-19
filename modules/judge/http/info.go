@@ -16,9 +16,9 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/judge/g"
-	"github.com/open-falcon/gome-plus/modules/judge/store"
+	"github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/judge/g"
+	"github.com/open-falcon/gome-falcon/modules/judge/store"
 	"net/http"
 	"strings"
 )

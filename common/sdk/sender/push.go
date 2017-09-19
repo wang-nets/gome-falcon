@@ -22,7 +22,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/open-falcon/gome-plus/common/model"
+	"github.com/open-falcon/gome-falcon/common/model"
 )
 
 func PostPush(L []*model.JsonMetaData) error {

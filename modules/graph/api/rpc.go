@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-falcon/gome-plus/modules/graph/g"
+	"github.com/open-falcon/gome-falcon/modules/graph/g"
 )
 
 type conn_list struct {

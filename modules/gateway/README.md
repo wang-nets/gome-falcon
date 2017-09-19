@@ -7,7 +7,7 @@
 
 ### Build
 
-请参考[gome-plus README](https://github.com/open-falcon/gome-plus)
+请参考[gome-falcon README](https://github.com/open-falcon/gome-falcon)
 
 ### Deploy
 服务部署，包括配置修改、启动服务、检验服务、停止服务等。这之前，需要将安装包解压到服务的部署目录下。

@@ -22,9 +22,9 @@ import (
 	tcron "github.com/toolkits/cron"
 	ttime "github.com/toolkits/time"
 
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/nodata/config/service"
-	"github.com/open-falcon/gome-plus/modules/nodata/g"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/nodata/config/service"
+	"github.com/open-falcon/gome-falcon/modules/nodata/g"
 )
 
 var (

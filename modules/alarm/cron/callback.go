@@ -20,9 +20,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/modules/alarm/api"
-	"github.com/open-falcon/gome-plus/modules/alarm/redi"
+	"github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/modules/alarm/api"
+	"github.com/open-falcon/gome-falcon/modules/alarm/redi"
 	"github.com/toolkits/net/httplib"
 )
 

@@ -17,7 +17,7 @@ package db
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/open-falcon/gome-plus/modules/aggregator/g"
+	"github.com/open-falcon/gome-falcon/modules/aggregator/g"
 	"log"
 )
 

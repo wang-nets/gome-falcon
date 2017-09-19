@@ -17,8 +17,8 @@ package cron
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/modules/judge/g"
+	"github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/modules/judge/g"
 	"log"
 	"time"
 )

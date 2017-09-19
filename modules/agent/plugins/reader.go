@@ -15,7 +15,7 @@
 package plugins
 
 import (
-	"github.com/open-falcon/gome-plus/modules/agent/g"
+	"github.com/open-falcon/gome-falcon/modules/agent/g"
 	"github.com/toolkits/file"
 	"io/ioutil"
 	"log"

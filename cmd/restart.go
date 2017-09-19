@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/open-falcon/gome-plus/g"
+	"github.com/open-falcon/gome-falcon/g"
 	"github.com/spf13/cobra"
 )
 

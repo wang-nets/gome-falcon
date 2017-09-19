@@ -23,10 +23,10 @@ import (
 	"time"
 
 	pfc "github.com/niean/goperfcounter"
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 
-	"github.com/open-falcon/gome-plus/modules/gateway/g"
-	"github.com/open-falcon/gome-plus/modules/gateway/sender"
+	"github.com/open-falcon/gome-falcon/modules/gateway/g"
+	"github.com/open-falcon/gome-falcon/modules/gateway/sender"
 )
 
 func socketTelnetHandle(conn net.Conn) {

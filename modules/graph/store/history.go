@@ -15,7 +15,7 @@
 package store
 
 import (
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 	tlist "github.com/toolkits/container/list"
 	tmap "github.com/toolkits/container/nmap"
 )

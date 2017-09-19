@@ -17,9 +17,9 @@ package index
 import (
 	log "github.com/Sirupsen/logrus"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/modules/graph/g"
-	"github.com/open-falcon/gome-plus/modules/graph/store"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/modules/graph/g"
+	"github.com/open-falcon/gome-falcon/modules/graph/store"
 	"github.com/toolkits/file"
 )
 

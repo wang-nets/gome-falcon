@@ -15,7 +15,7 @@
 package http
 
 import (
-	"github.com/open-falcon/gome-plus/modules/aggregator/db"
+	"github.com/open-falcon/gome-falcon/modules/aggregator/db"
 	"net/http"
 )
 

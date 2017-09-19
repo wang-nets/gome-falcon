@@ -16,7 +16,7 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/gome-plus/modules/agent/funcs"
+	"github.com/open-falcon/gome-falcon/modules/agent/funcs"
 	"github.com/toolkits/nux"
 	"net/http"
 	"runtime"

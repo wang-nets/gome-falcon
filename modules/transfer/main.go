@@ -17,11 +17,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/open-falcon/gome-plus/modules/transfer/g"
-	"github.com/open-falcon/gome-plus/modules/transfer/http"
-	"github.com/open-falcon/gome-plus/modules/transfer/proc"
-	"github.com/open-falcon/gome-plus/modules/transfer/receiver"
-	"github.com/open-falcon/gome-plus/modules/transfer/sender"
+	"github.com/open-falcon/gome-falcon/modules/transfer/g"
+	"github.com/open-falcon/gome-falcon/modules/transfer/http"
+	"github.com/open-falcon/gome-falcon/modules/transfer/proc"
+	"github.com/open-falcon/gome-falcon/modules/transfer/receiver"
+	"github.com/open-falcon/gome-falcon/modules/transfer/sender"
 	"os"
 )
 

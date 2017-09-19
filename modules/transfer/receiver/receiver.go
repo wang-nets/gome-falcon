@@ -15,8 +15,8 @@
 package receiver
 
 import (
-	"github.com/open-falcon/gome-plus/modules/transfer/receiver/rpc"
-	"github.com/open-falcon/gome-plus/modules/transfer/receiver/socket"
+	"github.com/open-falcon/gome-falcon/modules/transfer/receiver/rpc"
+	"github.com/open-falcon/gome-falcon/modules/transfer/receiver/socket"
 )
 
 func Start() {

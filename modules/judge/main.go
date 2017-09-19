@@ -17,11 +17,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/open-falcon/gome-plus/modules/judge/cron"
-	"github.com/open-falcon/gome-plus/modules/judge/g"
-	"github.com/open-falcon/gome-plus/modules/judge/http"
-	"github.com/open-falcon/gome-plus/modules/judge/rpc"
-	"github.com/open-falcon/gome-plus/modules/judge/store"
+	"github.com/open-falcon/gome-falcon/modules/judge/cron"
+	"github.com/open-falcon/gome-falcon/modules/judge/g"
+	"github.com/open-falcon/gome-falcon/modules/judge/http"
+	"github.com/open-falcon/gome-falcon/modules/judge/rpc"
+	"github.com/open-falcon/gome-falcon/modules/judge/store"
 	"os"
 )
 

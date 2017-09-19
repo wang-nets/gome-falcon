@@ -16,9 +16,9 @@ package dashboard_graph
 
 import (
 	"github.com/gin-gonic/gin"
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
-	m "github.com/open-falcon/gome-plus/modules/api/app/model/dashboard"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
+	m "github.com/open-falcon/gome-falcon/modules/api/app/model/dashboard"
 	"sort"
 	"strconv"
 	"strings"

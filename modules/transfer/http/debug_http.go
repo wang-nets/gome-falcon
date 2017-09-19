@@ -16,7 +16,7 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/gome-plus/modules/transfer/sender"
+	"github.com/open-falcon/gome-falcon/modules/transfer/sender"
 	"net/http"
 	"strings"
 )

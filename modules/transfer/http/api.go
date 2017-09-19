@@ -16,8 +16,8 @@ package http
 
 import (
 	"encoding/json"
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	prpc "github.com/open-falcon/gome-plus/modules/transfer/receiver/rpc"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	prpc "github.com/open-falcon/gome-falcon/modules/transfer/receiver/rpc"
 	"net/http"
 )
 

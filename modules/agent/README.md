@@ -12,8 +12,8 @@ It is a golang classic project
 # set $GOPATH and $GOROOT
 mkdir -p $GOPATH/src/github.com/open-falcon
 cd $GOPATH/src/github.com/open-falcon
-git clone https://github.com/open-falcon/gome-plus.git
-cd gome-plus/modules/agent
+git clone https://github.com/open-falcon/gome-falcon.git
+cd gome-falcon/modules/agent
 go get
 ./control build
 ./control start

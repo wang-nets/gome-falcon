@@ -16,10 +16,10 @@ package rpc
 
 import (
 	"bytes"
-	"github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/hbs/cache"
-	"github.com/open-falcon/gome-plus/modules/hbs/g"
+	"github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/hbs/cache"
+	"github.com/open-falcon/gome-falcon/modules/hbs/g"
 	"sort"
 	"strings"
 	"time"

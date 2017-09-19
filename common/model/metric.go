@@ -17,7 +17,7 @@ package model
 import (
 	"fmt"
 
-	MUtils "github.com/open-falcon/gome-plus/common/utils"
+	MUtils "github.com/open-falcon/gome-falcon/common/utils"
 )
 
 type MetricValue struct {

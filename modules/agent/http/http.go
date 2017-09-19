@@ -16,7 +16,7 @@ package http
 
 import (
 	"encoding/json"
-	"github.com/open-falcon/gome-plus/modules/agent/g"
+	"github.com/open-falcon/gome-falcon/modules/agent/g"
 	"log"
 	"net/http"
 	_ "net/http/pprof"

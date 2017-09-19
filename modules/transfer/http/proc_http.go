@@ -15,9 +15,9 @@
 package http
 
 import (
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/transfer/proc"
-	"github.com/open-falcon/gome-plus/modules/transfer/sender"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/transfer/proc"
+	"github.com/open-falcon/gome-falcon/modules/transfer/sender"
 	"net/http"
 	"strconv"
 	"strings"

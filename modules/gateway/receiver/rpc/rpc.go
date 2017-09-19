@@ -20,7 +20,7 @@ import (
 	"net/rpc"
 	"net/rpc/jsonrpc"
 
-	"github.com/open-falcon/gome-plus/modules/gateway/g"
+	"github.com/open-falcon/gome-falcon/modules/gateway/g"
 )
 
 func StartRpc() {

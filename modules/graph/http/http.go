@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/gome-plus/modules/graph/g"
-	"github.com/open-falcon/gome-plus/modules/graph/rrdtool"
+	"github.com/open-falcon/gome-falcon/modules/graph/g"
+	"github.com/open-falcon/gome-falcon/modules/graph/rrdtool"
 )
 
 type Dto struct {

@@ -19,8 +19,8 @@ import (
 	"log"
 	"strings"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	cutils "github.com/open-falcon/gome-plus/common/utils"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
 )
 
 type MockCfg struct {

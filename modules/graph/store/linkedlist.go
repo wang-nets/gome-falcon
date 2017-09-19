@@ -18,7 +18,7 @@ import (
 	"container/list"
 	"sync"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 )
 
 type SafeLinkedList struct {

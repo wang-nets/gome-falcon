@@ -17,8 +17,8 @@ package http
 import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/graph/index"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/graph/index"
 )
 
 func configIndexRoutes() {

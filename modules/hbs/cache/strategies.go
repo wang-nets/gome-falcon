@@ -15,8 +15,8 @@
 package cache
 
 import (
-	"github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/modules/hbs/db"
+	"github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/modules/hbs/db"
 	"github.com/toolkits/container/set"
 	"log"
 	"strconv"

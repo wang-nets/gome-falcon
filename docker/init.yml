@@ -30,9 +30,9 @@ services:
     restart: always
     volumes:
     - ./redis.conf:/redis.conf
-  gome-plus:
+  gome-falcon:
     command: bash /run.sh hbs
-    image: openfalcon/gome-plus:0.2.0
+    image: openfalcon/gome-falcon:0.2.0
     ports:
     - 8081:8081
     restart: always

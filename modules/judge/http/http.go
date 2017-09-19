@@ -16,7 +16,7 @@ package http
 
 import (
 	"encoding/json"
-	"github.com/open-falcon/gome-plus/modules/judge/g"
+	"github.com/open-falcon/gome-falcon/modules/judge/g"
 	"log"
 	"net/http"
 	_ "net/http/pprof"

@@ -21,9 +21,9 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
-	f "github.com/open-falcon/gome-plus/modules/api/app/model/falcon_portal"
-	u "github.com/open-falcon/gome-plus/modules/api/app/utils"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
+	f "github.com/open-falcon/gome-falcon/modules/api/app/model/falcon_portal"
+	u "github.com/open-falcon/gome-falcon/modules/api/app/utils"
 )
 
 type APIGetTemplatesOutput struct {

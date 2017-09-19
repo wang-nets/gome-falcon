@@ -26,9 +26,9 @@ import (
 	"github.com/gin-gonic/gin"
 	yaag_gin "github.com/masato25/yaag/gin"
 	"github.com/masato25/yaag/yaag"
-	"github.com/open-falcon/gome-plus/modules/api/app/controller"
-	"github.com/open-falcon/gome-plus/modules/api/config"
-	"github.com/open-falcon/gome-plus/modules/api/graph"
+	"github.com/open-falcon/gome-falcon/modules/api/app/controller"
+	"github.com/open-falcon/gome-falcon/modules/api/config"
+	"github.com/open-falcon/gome-falcon/modules/api/graph"
 	"github.com/spf13/viper"
 )
 

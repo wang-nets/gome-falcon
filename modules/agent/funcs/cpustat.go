@@ -15,7 +15,7 @@
 package funcs
 
 import (
-	"github.com/open-falcon/gome-plus/common/model"
+	"github.com/open-falcon/gome-falcon/common/model"
 	"github.com/toolkits/nux"
 	"sync"
 )

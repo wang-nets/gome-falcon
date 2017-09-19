@@ -22,13 +22,13 @@ import (
 	"net/http"
 	"time"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
 	tsema "github.com/toolkits/concurrent/semaphore"
 	"github.com/toolkits/container/nmap"
 	thttpclient "github.com/toolkits/http/httpclient"
 	ttime "github.com/toolkits/time"
 
-	"github.com/open-falcon/gome-plus/modules/nodata/g"
+	"github.com/open-falcon/gome-falcon/modules/nodata/g"
 )
 
 var (

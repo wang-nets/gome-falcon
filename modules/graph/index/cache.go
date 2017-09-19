@@ -25,10 +25,10 @@ import (
 
 	tcache "github.com/toolkits/cache/localcache/timedcache"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/graph/g"
-	"github.com/open-falcon/gome-plus/modules/graph/proc"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/graph/g"
+	"github.com/open-falcon/gome-falcon/modules/graph/proc"
 )
 
 const (

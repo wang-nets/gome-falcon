@@ -17,7 +17,7 @@ package http
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/open-falcon/gome-plus/modules/transfer/g"
+	"github.com/open-falcon/gome-falcon/modules/transfer/g"
 	"io/ioutil"
 	"log"
 	"net/http"

@@ -15,7 +15,7 @@
 package uic
 
 import (
-	"github.com/open-falcon/gome-plus/modules/api/config"
+	"github.com/open-falcon/gome-falcon/modules/api/config"
 )
 
 type RelTeamUser struct {

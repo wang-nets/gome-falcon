@@ -18,8 +18,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/gome-plus/modules/api/app/utils"
-	"github.com/open-falcon/gome-plus/modules/api/config"
+	"github.com/open-falcon/gome-falcon/modules/api/app/utils"
+	"github.com/open-falcon/gome-falcon/modules/api/config"
 )
 
 var db config.DBPool

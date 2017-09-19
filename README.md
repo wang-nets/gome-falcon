@@ -2,17 +2,17 @@
 
 ![Open-Falcon](./logo.png)
 
-[![Build Status](https://travis-ci.org/open-falcon/gome-plus.svg?branch=plus-dev)](https://travis-ci.org/open-falcon/gome-plus)
-[![codecov](https://codecov.io/gh/open-falcon/gome-plus/branch/plus-dev/graph/badge.svg)](https://codecov.io/gh/open-falcon/gome-plus)
-[![GoDoc](https://godoc.org/github.com/open-falcon/gome-plus?status.svg)](https://godoc.org/github.com/open-falcon/gome-plus)
+[![Build Status](https://travis-ci.org/open-falcon/gome-falcon.svg?branch=plus-dev)](https://travis-ci.org/open-falcon/gome-falcon)
+[![codecov](https://codecov.io/gh/open-falcon/gome-falcon/branch/plus-dev/graph/badge.svg)](https://codecov.io/gh/open-falcon/gome-falcon)
+[![GoDoc](https://godoc.org/github.com/open-falcon/gome-falcon?status.svg)](https://godoc.org/github.com/open-falcon/gome-falcon)
 [![Code Issues](https://www.quantifiedcode.com/api/v1/project/5035c017b02c4a4a807ebc4e9f153e6f/badge.svg)](https://www.quantifiedcode.com/app/project/5035c017b02c4a4a807ebc4e9f153e6f)
-[![Go Report Card](https://goreportcard.com/badge/github.com/open-falcon/gome-plus)](https://goreportcard.com/report/github.com/open-falcon/gome-plus)
+[![Go Report Card](https://goreportcard.com/badge/github.com/open-falcon/gome-falcon)](https://goreportcard.com/report/github.com/open-falcon/gome-falcon)
 [![License](https://img.shields.io/badge/LICENSE-Apache2.0-ff69b4.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 # Documentations
 
 - [Usage](http://book.open-falcon.org)
-- [Open-Falcon API](http://open-falcon.org/gome-plus)
+- [Open-Falcon API](http://open-falcon.org/gome-falcon)
 
 # Prerequisite
 
@@ -23,7 +23,7 @@
 
 ## Docker
 
-Please refer to ./docker/[README.md](https://github.com/open-falcon/gome-plus/blob/master/docker/README.md).
+Please refer to ./docker/[README.md](https://github.com/open-falcon/gome-falcon/blob/master/docker/README.md).
 
 ## Build from source
 **before start, please make sure you prepared this:**
@@ -44,14 +44,14 @@ And then
 
 mkdir -p $GOPATH/src/github.com/open-falcon
 cd $GOPATH/src/github.com/open-falcon
-git clone https://github.com/open-falcon/gome-plus.git
+git clone https://github.com/open-falcon/gome-falcon.git
 
 ```
 
 **And do not forget to init the database first (if you have not loaded the database schema before)**
 
 ```
-cd $GOPATH/src/github.com/open-falcon/gome-plus/scripts/mysql/db_schema/
+cd $GOPATH/src/github.com/open-falcon/gome-falcon/scripts/mysql/db_schema/
 mysql -h 127.0.0.1 -u root -p < 1_uic-db-schema.sql
 mysql -h 127.0.0.1 -u root -p < 2_portal-db-schema.sql
 mysql -h 127.0.0.1 -u root -p < 3_dashboard-db-schema.sql
@@ -66,7 +66,7 @@ mysql -h 127.0.0.1 -u root -p < 5_alarms-db-schema.sql
 # Compilation
 
 ```
-cd $GOPATH/src/github.com/open-falcon/gome-plus/
+cd $GOPATH/src/github.com/open-falcon/gome-falcon/
 
 # make all modules
 make all
@@ -144,6 +144,6 @@ make clean all pack
 
 # Q&A
 
-- Any issue or question is welcome, Please feel free to open [github issues](https://github.com/open-falcon/gome-plus/issues) :)
+- Any issue or question is welcome, Please feel free to open [github issues](https://github.com/open-falcon/gome-falcon/issues) :)
 - [FAQ](https://book.open-falcon.org/zh_0_2/faq/)
 

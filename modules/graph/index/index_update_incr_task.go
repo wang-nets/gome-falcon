@@ -22,8 +22,8 @@ import (
 	nsema "github.com/toolkits/concurrent/semaphore"
 	ntime "github.com/toolkits/time"
 
-	"github.com/open-falcon/gome-plus/modules/graph/g"
-	proc "github.com/open-falcon/gome-plus/modules/graph/proc"
+	"github.com/open-falcon/gome-falcon/modules/graph/g"
+	proc "github.com/open-falcon/gome-falcon/modules/graph/proc"
 )
 
 const (

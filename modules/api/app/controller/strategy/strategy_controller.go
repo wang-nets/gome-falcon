@@ -24,8 +24,8 @@ import (
 	"io/ioutil"
 
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
-	f "github.com/open-falcon/gome-plus/modules/api/app/model/falcon_portal"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
+	f "github.com/open-falcon/gome-falcon/modules/api/app/model/falcon_portal"
 	"github.com/spf13/viper"
 )
 

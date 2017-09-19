@@ -16,8 +16,8 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/gome-plus/modules/agent/g"
-	"github.com/open-falcon/gome-plus/modules/agent/plugins"
+	"github.com/open-falcon/gome-falcon/modules/agent/g"
+	"github.com/open-falcon/gome-falcon/modules/agent/plugins"
 	"github.com/toolkits/file"
 	"net/http"
 	"os/exec"

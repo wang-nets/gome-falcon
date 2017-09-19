@@ -19,7 +19,7 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/gome-plus/modules/api/app/helper"
+	h "github.com/open-falcon/gome-falcon/modules/api/app/helper"
 	"github.com/spf13/viper"
 )
 

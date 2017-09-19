@@ -18,15 +18,15 @@ import (
 	"log"
 	"time"
 
-	cmodel "github.com/open-falcon/gome-plus/common/model"
-	cutils "github.com/open-falcon/gome-plus/common/utils"
+	cmodel "github.com/open-falcon/gome-falcon/common/model"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
 	tcron "github.com/toolkits/cron"
 	ttime "github.com/toolkits/time"
 
-	"github.com/open-falcon/gome-plus/modules/nodata/collector"
-	"github.com/open-falcon/gome-plus/modules/nodata/config"
-	"github.com/open-falcon/gome-plus/modules/nodata/g"
-	"github.com/open-falcon/gome-plus/modules/nodata/sender"
+	"github.com/open-falcon/gome-falcon/modules/nodata/collector"
+	"github.com/open-falcon/gome-falcon/modules/nodata/config"
+	"github.com/open-falcon/gome-falcon/modules/nodata/g"
+	"github.com/open-falcon/gome-falcon/modules/nodata/sender"
 )
 
 var (

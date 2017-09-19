@@ -17,8 +17,8 @@ package plugins
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/open-falcon/gome-plus/common/model"
-	"github.com/open-falcon/gome-plus/modules/agent/g"
+	"github.com/open-falcon/gome-falcon/common/model"
+	"github.com/open-falcon/gome-falcon/modules/agent/g"
 	"github.com/toolkits/file"
 	"github.com/toolkits/sys"
 	"log"

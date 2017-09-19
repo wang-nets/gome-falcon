@@ -15,8 +15,8 @@
 package sender
 
 import (
-	cutils "github.com/open-falcon/gome-plus/common/utils"
-	"github.com/open-falcon/gome-plus/modules/transfer/g"
+	cutils "github.com/open-falcon/gome-falcon/common/utils"
+	"github.com/open-falcon/gome-falcon/modules/transfer/g"
 	rings "github.com/toolkits/consistent/rings"
 )
 
