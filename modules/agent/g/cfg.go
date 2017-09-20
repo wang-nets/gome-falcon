@@ -129,7 +129,7 @@ func RedisHostName(sn string) (string, error) {
 	c.Do("AUTH", redis_pass)
 	value, err := redis.String(c.Do("GET", sn))
 	if err != nil {
-		log.Println("ERROR: can't get hostinfo from redis which the machine'sn is ",sn)
+		log.Println("ERROR: can't get hostinfo from redis which the machine'sn is ",sn," err:", err)
 	}
 	var host_info HostInfo
 	json.Unmarshal([]byte(value), &host_info)
@@ -140,9 +140,7 @@ func RedisHostName(sn string) (string, error) {
 }
 
 func Hostname() (string, error) {
-	redisenabled := Config().CmdbRedis.Enabled
-	log.Println("INFO: redis enabled is ", redisenabled)
-	if redisenabled == true {
+	if Config().CmdbRedis.Enabled {
 		var sn string
 		var hostname string
 		sn, _ = Sn()
@@ -210,5 +208,4 @@ func ParseConfig(cfg string) {
 	config = &c
 
 	log.Println("read config file:", cfg, "successfully")
-	log.Println("New log record:", cfg, "successfully")
 }
