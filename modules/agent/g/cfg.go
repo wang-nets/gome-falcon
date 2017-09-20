@@ -21,6 +21,7 @@ import (
 	"sync"
 	"os/exec"
 	"bytes"
+	"strings"
 	"github.com/toolkits/file"
 	"github.com/garyburd/redigo/redis"
 )
@@ -111,6 +112,7 @@ func Sn() (string, error) {
 		log.Println("ERROR: execute dmidecode to get sn failed")
 	}
 	sn := out.String()
+	sn = strings.Replace(sn, "\n", "", -1)
 	return sn, nil
 }
 
@@ -134,7 +136,6 @@ func RedisHostName(sn string) (string, error) {
 	var host_info HostInfo
 	json.Unmarshal([]byte(value), &host_info)
 	hostname := host_info.HostName
-	log.Println("INFO: host name from redis is ", hostname)
 	defer c.Close()
 	return hostname, nil
 }
