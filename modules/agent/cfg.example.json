@@ -2,6 +2,11 @@
     "debug": true,
     "hostname": "",
     "ip": "",
+    "redis": {
+        "enabled": true,
+        "addr": "127.0.0.1:6378",
+        "password": ""
+    },
     "plugin": {
         "enabled": false,
         "dir": "./plugin",
