@@ -24,6 +24,7 @@ import (
 	"strings"
 	"github.com/toolkits/file"
 	"github.com/garyburd/redigo/redis"
+	"github.com/patrickmn/go-cache"
 )
 
 type PluginConfig struct {
@@ -116,14 +117,21 @@ func Sn() (string, error) {
 	return sn, nil
 }
 
-func RedisHostName(sn string) (string, error) {
+func CacheHostName(m *cache.Cache, sn string) (string, error) {
 	redis_addr := Config().CmdbRedis.Addr
 	redis_pass := Config().CmdbRedis.Password
-	log.Println("INFO: redis_addr:", redis_addr, ",redis_pass:", redis_pass)
+
 	if redis_addr == "" {
 		log.Println("ERROR: read redis_addr failed")
 	}
-
+	var host_info HostInfo
+	cache_value, found := m.Get(sn)
+	if found {
+		log.Println("INFO: find hostname in local cache!")
+		json.Unmarshal([]byte(cache_value), &host_info)
+		hostname := host_info.HostName
+		return hostname, nil
+	}
 	c, err := redis.Dial("tcp", redis_addr)
 	if err != nil {
 		log.Println("ERROR: can't connect redis, redis_addr: ", redis_addr)
@@ -133,19 +141,22 @@ func RedisHostName(sn string) (string, error) {
 	if err != nil {
 		log.Println("ERROR: can't get hostinfo from redis which the machine'sn is ",sn," err:", err)
 	}
-	var host_info HostInfo
+
 	json.Unmarshal([]byte(value), &host_info)
 	hostname := host_info.HostName
+	m.Set(sn, value, cache.DefaultExpiration)
 	defer c.Close()
 	return hostname, nil
 }
 
-func Hostname() (string, error) {
+
+
+func Hostname(m *cache.Cache) (string, error) {
 	if Config().CmdbRedis.Enabled {
 		var sn string
 		var hostname string
 		sn, _ = Sn()
-		hostname, _ = RedisHostName(sn)
+		hostname, _ = CacheHostName(m, sn)
 		if hostname != "" {
 			return hostname, nil
 		}
